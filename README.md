@@ -3,6 +3,7 @@ Scripts created to use with the OSCP exercises
 
 ## snmp_user_discovery.py
 Use this script to scan a list of ip addresess for a list of usernames
+*use python2*
 
 ### Example usage
 ```
