@@ -11,7 +11,10 @@
 
 ### List all methods
     
-    curl -L -X POST -d '<methodCall> <methodName>system.listMethods</methodName> <params></params> </methodCall>' https://$DOMAIN/xmlrpc.php
+    curl -L \
+    -X POST \
+    -d '<methodCall> <methodName>system.listMethods</methodName> <params></params> </methodCall>' \
+    https://$DOMAIN/xmlrpc.php
     
     
 ### POST Request
