@@ -11,7 +11,11 @@
 
 ### List all methods
     
+    DOMAIN="example.com"
+    USERAGENT="Mozilla/5.0 (X11; CrOS x86_64 14816.131.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36"
     curl -L \
+    -k \
+    -A $USERAGENT \
     -X POST \
     -d '<methodCall> <methodName>system.listMethods</methodName> <params></params> </methodCall>' \
     https://$DOMAIN/xmlrpc.php
